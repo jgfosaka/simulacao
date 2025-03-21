@@ -22,7 +22,7 @@ function validar() {
                 cpfCortado = cpfDigitado.slice(0, 10);
                 aux = 11;
             }
-           
+
             for (let i = 0; i < cpfCortado.length; i++) {
                 resultado.push(cpfCortado[i] * aux);
                 aux--;
@@ -62,16 +62,16 @@ function validar() {
                 }
             }
             vezes++;
-            
 
-            if (penultimo == cpfDigitado[9] && ultimo == cpfDigitado[10]){
-                if (vezes == 2){
+
+            if (penultimo == cpfDigitado[9] && ultimo == cpfDigitado[10]) {
+                if (vezes == 2) {
                     validado = true;
                     alert("Seu CPF é valido!!");
                 }
             }
-            else{
-                if (vezes == 2){
+            else {
+                if (vezes == 2) {
                     alert("Seu CPF é inválido.");
                     break;
                 }
